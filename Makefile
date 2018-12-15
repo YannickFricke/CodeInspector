@@ -17,4 +17,4 @@ tests-coverage:
 	python -m pytest --cov pycin
 
 install-deps:
-	pip3 install -r requirements.txt
+	pip install -r requirements.txt

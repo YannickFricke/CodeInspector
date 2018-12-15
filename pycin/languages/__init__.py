@@ -17,7 +17,6 @@ class Language(ABC):
         Returns an array of supported tools for this language
         :return: The supported tools
         """
-        pass
 
     def __str__(self):
         return '{}: {}'.format(self.pretty_name, self.get_supported_tools())

@@ -4,7 +4,7 @@ attrs==18.2.0
 blessings==1.7
 certifi==2018.11.29
 chardet==3.0.4
-coverage==4.0.3
+coverage==4.5.2
 execnet==1.5.0
 idna==2.8
 inquirer==2.5.1
@@ -18,10 +18,10 @@ pytest-cache==1.0
 pytest-cov==2.6.0
 pytest-mock==1.10.0
 pytest-pep8==1.0.6
-python-coveralls==2.9.1
 PyYAML==3.13
 readchar==2.0.1
 requests==2.21.0
 six==1.11.0
 urllib3==1.24.1
 virtualenv==16.1.0
+git+https://github.com/YannickFricke/python-coveralls.git

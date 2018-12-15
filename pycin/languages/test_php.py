@@ -22,7 +22,7 @@ class TestPHP(object):
         """
         assert len(php.get_supported_tools()) == 0
 
-    def test_tostring(self):
+    def test_str(self):
         """
         Tests the string representation of the PHP class
         """

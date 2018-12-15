@@ -1,4 +1,4 @@
-from languages.PHP import PHP
+from pycin.languages.PHP import PHP
 
 php = PHP()
 

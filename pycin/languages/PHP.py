@@ -1,4 +1,4 @@
-from languages import Language
+from pycin.languages import Language
 
 
 class PHP(Language):

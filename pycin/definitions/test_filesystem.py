@@ -1,6 +1,6 @@
 from unittest import mock
 
-from definitions.FileSystem import FileSystem
+from pycin.definitions.FileSystem import FileSystem
 
 
 class TestFileSystem(object):

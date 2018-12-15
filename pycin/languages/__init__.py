@@ -19,4 +19,8 @@ class Language(ABC):
         """
 
     def __str__(self):
+        """
+        Returns the string representation of the language
+        :return: the string representation of the language
+        """
         return '{}: {}'.format(self.pretty_name, self.get_supported_tools())

@@ -1,0 +1,5 @@
+.idea/
+venv/
+nodemon.json
+.coverage
+__pycache__

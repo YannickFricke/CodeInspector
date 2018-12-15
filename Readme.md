@@ -1,4 +1,4 @@
-# CodeInspector
+# CodeInspector [![Coverage Status](https://coveralls.io/repos/github/YannickFricke/CodeInspector/badge.svg?branch=develop)](https://coveralls.io/github/YannickFricke/CodeInspector?branch=develop)
 
 ## About the project
 CodeInspector runs several programs against your code base and reports their output to commits and merge requests for ensuring a well tested codebase.

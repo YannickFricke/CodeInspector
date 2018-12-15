@@ -12,3 +12,6 @@ class TestPHP(object):
 
     def test_supportest_tools(self):
         assert len(php.get_supported_tools()) == 0
+
+    def test_tostring(self):
+        assert str(php) == 'PHP: []'

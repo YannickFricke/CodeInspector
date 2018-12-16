@@ -1,3 +1,6 @@
+from pycin.commands import Command
+
+
 class CommandManager:
     def __init__(self):
         """
@@ -5,21 +8,21 @@ class CommandManager:
         """
         self.commands = []
 
-    def add_command(self, command):
+    def add_command(self, command: Command):
         """
         Adds a Command to the CommandManager
         :param command: The command to add
         """
         self.commands.append(command)
 
-    def remove_command(self, command):
+    def remove_command(self, command: Command):
         """
         Removes a Command from the CommandManager
         :param command: The Command to remove
         """
         self.commands.remove(command)
 
-    def execute(self, command_name, command_args):
+    def execute(self, command_name: str, command_args: []):
         """
         Executes a Command with the given name and the given arguments
         :param command_name: The name of the Command to execute

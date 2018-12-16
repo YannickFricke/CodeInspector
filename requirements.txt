@@ -5,6 +5,7 @@ blessings==1.7
 certifi==2018.11.29
 chardet==3.0.4
 coverage==4.5.2
+dependency-injector==3.14.2
 execnet==1.5.0
 idna==2.8
 inquirer==2.5.1

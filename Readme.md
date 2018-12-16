@@ -1,4 +1,4 @@
-# PyCIn [![Build Status](https://travis-ci.org/YannickFricke/CodeInspector.svg?branch=develop)](https://travis-ci.org/YannickFricke/CodeInspector) [![Coverage Status](https://coveralls.io/repos/github/YannickFricke/CodeInspector/badge.svg?branch=develop)](https://coveralls.io/github/YannickFricke/CodeInspector?branch=develop)
+# PyCIn [![Build Status](https://travis-ci.org/PyCIn/PyCIn.svg?branch=develop)](https://travis-ci.org/YannickFricke/CodeInspector) [![Coverage Status](https://coveralls.io/repos/github/PyCIn/PyCIn/badge.svg?branch=develop)](https://coveralls.io/github/PyCIn/PyCIn?branch=develop)
 
 ## About the project
 PyCIn runs several programs against your code base and reports their output to commits and merge requests for ensuring a well tested codebase.

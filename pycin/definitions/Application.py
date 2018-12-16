@@ -10,6 +10,11 @@ class Application:
         self.known_commands = known_commands
 
     def run(self):
+        if len(sys.argv) < 2:
+            print('No command specified')
+            self.display_help()
+            return False
+
         command_manager = CommandManager()
 
         for command in self.known_commands:
@@ -21,14 +26,14 @@ class Application:
         program_arguments = program_arguments[1:]
 
         try:
-            command_manager.execute(command, program_arguments)
+            return command_manager.execute(command, program_arguments)
         except Exception as exception:
             self.logger.error(
                 'Could not start application: %s',
                 str(exception)
             )
             self.display_help()
-            sys.exit(1)
+            return False
 
     @staticmethod
     def display_help():

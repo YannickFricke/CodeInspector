@@ -19,3 +19,4 @@ class InitCommand(Command):
         :return: True on success. Otherwise false.
         """
         self.logger.info('Initializing in "%s"!' % os.getcwd())
+        return True

@@ -18,6 +18,14 @@ class Command(ABC):
         Otherwise false is returned
         """
 
+    def is_arg_an_option(self, argument: str):
+        """
+        Returns true when the arguments begins with two dashes
+        :param argument: The argument to check
+        :return: True when the argument is an option
+        """
+        return argument.startswith('--')
+
     def __str__(self):
         """
         Returns the string representation of the command

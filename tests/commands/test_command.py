@@ -11,8 +11,14 @@ class ExampleCommand(Command):
 
 class TestCommand:
     def test_name(self):
-        test_command = ExampleCommand()
-        assert test_command.name == 'Test'
+        command = ExampleCommand()
+        assert command.name == 'Test'
+
+    def test_is_arg_an_option(self):
+        command = ExampleCommand()
+        assert command.is_arg_an_option('--arg'), 'A string with two beginning dashes is not an option'
+        assert command.is_arg_an_option(
+            'arg') == False, 'A string which does not begins with two dashes is not an option'
 
     def test_str(self):
         command = ExampleCommand()

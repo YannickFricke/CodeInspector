@@ -13,7 +13,7 @@ class Command(ABC):
     def execute(self, arguments):
         """
         Executes the command with the given arguments
-        :param arguments: The arguments for the command
+        :param arguments: The arguments for the execution of the command
         :return: True when the command was executed successfully.
         Otherwise false is returned
         """

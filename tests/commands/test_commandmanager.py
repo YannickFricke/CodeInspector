@@ -2,7 +2,7 @@ from unittest import mock
 
 import pytest
 
-from pycin.commands import CommandManager
+from pycin.definitions.CommandManager import CommandManager
 
 
 class TestCommandManager:

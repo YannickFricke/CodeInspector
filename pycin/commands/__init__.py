@@ -1,23 +1,26 @@
-class CommandManager:
-    def __init__(self):
-        self.commands = []
+from abc import ABC, abstractmethod
 
-    def add_command(self, command):
-        self.commands.append(command)
 
-    def remove_command(self, command):
-        self.commands.remove(command)
+class Command(ABC):
+    def __init__(self, name):
+        """
+        Initializes the Command
+        :param name: The name of the command
+        """
+        self.name = name
 
-    def execute(self, command_name, command_args):
-        for command in self.commands:
-            if command.name != command_name:
-                continue
+    @abstractmethod
+    def execute(self, arguments):
+        """
+        Executes the command with the given arguments
+        :param arguments: The arguments for the command
+        :return: True when the command was executed successfully.
+        Otherwise false is returned
+        """
 
-            return command.execute(command_args)
-
-        raise Exception(
-            'No command with the name "{}" found'.format(command_name)
-        )
-
-    def get_commands(self):
-        return self.commands
+    def __str__(self):
+        """
+        Returns the string representation of the command
+        :return: The string representation of the command
+        """
+        return self.name

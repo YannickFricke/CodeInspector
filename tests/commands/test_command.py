@@ -1,4 +1,4 @@
-from pycin.commands.Command import Command
+from pycin.commands import Command
 
 
 class ExampleCommand(Command):

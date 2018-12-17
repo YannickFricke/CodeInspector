@@ -3,8 +3,10 @@ import sys
 
 from dependency_injector import containers, providers
 
+from pycin.code_provider.GitHub import GitHub
 from pycin.commands.InitCommand import InitCommand
 from pycin.definitions.Application import Application
+from pycin.languages.PHP import PHP
 
 
 def get_configured_logger():
@@ -24,9 +26,26 @@ def get_configured_logger():
 
 
 class Container(containers.DynamicContainer):
+    # Logging
+
     logger = providers.Object(get_configured_logger())
 
-    initCommand = providers.Singleton(InitCommand, logger)
+    # Commands
+
+    supported_languages = [
+        PHP()
+    ]
+
+    supported_code_providers = [
+        GitHub
+    ]
+
+    initCommand = providers.Singleton(InitCommand,
+                                      logger,
+                                      supported_languages,
+                                      supported_code_providers)
+
+    # The application
 
     known_commands = [
         initCommand()

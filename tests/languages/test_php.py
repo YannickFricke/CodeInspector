@@ -20,10 +20,10 @@ class TestPHP(object):
         """
         Tests the get_supported_tools method of the PHP class
         """
-        assert len(php.get_supported_tools()) == 0
+        assert len(php.get_supported_tools()) == 1
 
     def test_str(self):
         """
         Tests the string representation of the PHP class
         """
-        assert str(php) == 'PHP: []'
+        assert str(php) == 'PHP'

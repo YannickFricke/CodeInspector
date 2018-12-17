@@ -33,6 +33,7 @@ pytest-cov==2.6.0
 pytest-mock==1.10.0
 pytest-pep8==1.0.6
 python-dateutil==2.7.5
+python-gitlab==1.7.0
 PyYAML==3.13
 readchar==2.0.1
 regex==2018.11.22

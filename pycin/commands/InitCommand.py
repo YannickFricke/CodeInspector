@@ -1,6 +1,5 @@
 import logging
 import os
-from pprint import pprint
 from typing import List
 
 from PyInquirer import prompt
@@ -50,9 +49,6 @@ class InitCommand(Command):
             )
             return True
 
-        for used_language in used_languages:
-            self.logger.debug('This project uses: %s', used_language)
-
         configuration_contents = self.setup_languages(used_languages)
 
         used_code_providers = self.prompt_for_used_code_providers()
@@ -81,9 +77,6 @@ class InitCommand(Command):
         configuration = {}
 
         for supported_language in self.supported_languages:
-
-            pprint(str(supported_language))
-
             if supported_language.pretty_name not in languages:
                 continue
 

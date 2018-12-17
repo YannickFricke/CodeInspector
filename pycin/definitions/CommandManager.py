@@ -1,3 +1,5 @@
+from typing import List
+
 from pycin.commands import Command
 
 
@@ -22,7 +24,7 @@ class CommandManager:
         """
         self.commands.remove(command)
 
-    def execute(self, command_name: str, command_args: []):
+    def execute(self, command_name: str, command_args: List[str]):
         """
         Executes a Command with the given name and the given arguments
         :param command_name: The name of the Command to execute

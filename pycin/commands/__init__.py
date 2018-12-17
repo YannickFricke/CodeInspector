@@ -1,8 +1,9 @@
 from abc import ABC, abstractmethod
+from typing import List
 
 
 class Command(ABC):
-    def __init__(self, name):
+    def __init__(self, name: str):
         """
         Initializes the Command
         :param name: The name of the command
@@ -10,7 +11,7 @@ class Command(ABC):
         self.name = name
 
     @abstractmethod
-    def execute(self, arguments):
+    def execute(self, arguments: List[str]):
         """
         Executes the command with the given arguments
         :param arguments: The arguments for the execution of the command

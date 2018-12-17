@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 
 class Language(ABC):
-    def __init__(self, name, pretty_name):
+    def __init__(self, name: str, pretty_name: str):
         """
         Constructs a new 'Language' object
         :param name: The name of the language

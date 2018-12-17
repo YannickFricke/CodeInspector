@@ -1,11 +1,13 @@
 import logging
 import sys
+from typing import List
 
+from pycin.commands import Command
 from pycin.definitions.CommandManager import CommandManager
 
 
 class Application:
-    def __init__(self, logger: logging.Logger, known_commands: []):
+    def __init__(self, logger: logging.Logger, known_commands: List[Command]):
         self.logger = logger
         self.known_commands = known_commands
 

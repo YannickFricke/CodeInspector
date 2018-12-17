@@ -58,7 +58,7 @@ class InitCommand(Command):
 
         config_file_handle = os.open(
             self.path + CONFIG_FILE_NAME,
-            os.O_CREAT | os.O_WRONLY
+            os.O_CREAT | os.O_WRONLY | os.O_TRUNC
         )
         os.write(
             config_file_handle,

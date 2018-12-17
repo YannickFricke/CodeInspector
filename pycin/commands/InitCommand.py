@@ -7,7 +7,9 @@ from pycin.languages import Language
 
 
 class InitCommand(Command):
-    def __init__(self, logger: logging.Logger, supported_languages: List[Language]):
+    def __init__(self,
+                 logger: logging.Logger,
+                 supported_languages: List[Language]):
         """
         Initializes the InitCommand
         """

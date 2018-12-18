@@ -20,7 +20,8 @@ class FileSystem:
         :param path: The path where to check for the directories
         :return: The directories in the path
         """
-        return list(filter(lambda item: os.path.isdir(item), os.listdir(path)))
+        path = FileSystem().ensure_trailing_path_seperator(path)
+        return list(filter(lambda item: os.path.isdir(path + item), os.listdir(path)))
 
     @staticmethod
     def get_filtered_directories(rootpath: str):

@@ -21,7 +21,7 @@ class PHP(Language):
     def setup(self, rootpath: str):
         questions = [
             {
-                'type': 'rawlist',
+                'type': 'list',
                 'name': 'source_root',
                 'message': 'Please select your directory ' +
                            'with the PHP sources',

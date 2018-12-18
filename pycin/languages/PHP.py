@@ -3,7 +3,7 @@ from PyInquirer import prompt
 from pycin.definitions.FileSystem import FileSystem
 from pycin.languages import Language
 from pycin.package_manager.Composer import Composer
-from pycin.supported_tools.PHP.PHPCS import PHPCS
+from pycin.supported_tools.php.PHPCS import PHPCS
 
 pretty_name = 'PHP'
 

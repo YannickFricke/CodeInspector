@@ -20,7 +20,11 @@ class PHPCS(SupportedTool):
     def execute(self,
                 path: str,
                 package_managers: List[PackageManager]):
-        found_binary = FileSystem().get_binary_path(self.executable, package_managers)
+
+        found_binary = FileSystem().get_binary_path(
+            self.executable,
+            package_managers
+        )
 
         if found_binary is None:
             raise Exception(

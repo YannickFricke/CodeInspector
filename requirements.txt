@@ -16,7 +16,7 @@ github3.py==1.2.0
 GitPython==2.1.11
 idna==2.8
 jwcrypto==0.6.0
-more-itertools==4.3.0
+more-itertools==5.0.0
 pathlib2==2.3.3
 pep8==1.7.1
 pluggy==0.8.0

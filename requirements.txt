@@ -8,7 +8,7 @@ cffi==1.11.5
 chardet==3.0.4
 coverage==4.5.2
 cryptography==2.4.2
-dependency-injector==3.14.2
+dependency-injector==3.14.3
 Deprecated==1.2.4
 execnet==1.5.0
 gitdb2==2.0.5

@@ -32,7 +32,7 @@ pytest-cache==1.0
 pytest-cov==2.6.1
 pytest-mock==1.10.0
 pytest-pep8==1.0.6
-python-dateutil==2.7.5
+python-dateutil==2.8.0
 python-gitlab==1.7.0
 PyYAML>=4.2b1
 readchar==2.0.1
